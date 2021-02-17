@@ -1,0 +1,3184 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*body 
+{
+    width: fit-content; 
+}*/
+
+.header
+{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: limegreen;
+    justify-content: left;
+    align-items: center;
+}
+
+/*header------------------------------------------------------------------------------------------------------------------------------------*/
+.header span
+{
+    margin-left: 100px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.header span span
+{
+    margin-left: 0px;
+    color: lightblue;
+}
+
+/*mainnaslovi------------------------------------------------------------------------------------------------------------------------------------*/
+.main
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+}
+
+.naslov
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: sans-serif;
+    color: steelblue;
+    border: 1px solid black;
+}
+
+.units
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.unit1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: green;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.unit1:hover
+{
+    color: royalblue;
+    background-color: springgreen;
+}
+
+.unit2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: green;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.unit2:hover
+{
+    color: royalblue;
+    background-color: springgreen;
+}
+
+.unit3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: green;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.unit3:hover
+{
+    color: royalblue;
+    background-color: springgreen;
+}
+
+.unitchange
+{
+    background-color: springgreen;
+    color: royalblue;
+}
+
+/*converters------------------------------------------------------------------------------------------------------------------------------------*/
+/*lengthmain------------------------------------------------------------------------------------------------------------------------------------*/
+.conmain
+{
+    display: none;
+    /*display: flex;
+    flex-direction: row;*/
+}
+
+.condiv
+{
+    width: 30%;
+    height: 350px;
+    /*border: 1px solid black;*/
+}
+
+.conlabel
+{
+    display: block;
+    margin: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: royalblue; /*darkcyan*/
+}
+
+.coninput
+{
+    text-align: center;
+    display: block;
+    margin: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    border: 2px solid darkgray;
+}
+
+.coninput:hover
+{
+    border: 2px solid lightslategrey;
+}
+
+.consel
+{
+    margin-left: 50px;
+    width: 300px;
+    height: 90px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid darkgray;
+}
+
+.consel option:hover
+{
+    background-color: lightslategray;
+}
+
+/*button------------------------------------------------------------------------------------------------------------------------------------*/
+.divbut 
+{
+    width: 10%;
+    height: 350px;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button1
+{
+    width: 90%;
+    height: 25px;
+    transform: skew(30deg);
+    border: 1px solid grey;
+    /*border-bottom: 0px;*/
+    border-bottom: 1px solid lightgrey;
+    background-color: lightgrey;
+}
+
+.button2
+{
+    width: 90%;
+    height: 25px;
+    transform: skew(-30deg);
+    border: 1px solid grey;
+    border-top: 1px solid lightgrey;
+    /*border-top: 0px;*/
+    background-color: lightgrey;
+}
+
+.button1:focus, .button2:focus 
+{
+    outline:0;
+}
+
+.divbut p
+{
+    z-index: 99999;
+    position: absolute;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: italic;
+    color: orange;
+}
+/*.button1:hover ~ .button2
+{
+    border: 2px solid rgb(16, 93, 236);
+    border-top: 0px;
+}*/
+/*score------------------------------------------------------------------------------------------------------------------------------------*/
+.scorediv
+{
+    width: 60%;
+    height: 350px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scorenaslov
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+    height: 30px;
+    color: rgb(49, 48, 48);
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.inlinetables
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.scorebox
+{
+    width: 45%;
+    height: 200px;
+    border: 1px solid black;
+    background-color: royalblue;
+}
+
+.scorebox tr
+{
+    display: flex;
+}
+
+.scorebox tr td span
+{
+    margin: auto;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+.abr
+{
+    display: none;
+}
+
+.valuetd
+{
+    border: 1px solid black;
+    background-color: lightblue;
+    height: 48px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outputtd
+{
+    border: 1px solid black;
+    background-color: lightblue;
+    height: 48px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.exp
+{
+    background-color: limegreen;
+    width: 45%;
+    height: 200px;
+    border: 1px solid black;
+    border-left: 0px;
+}
+
+.exp tr
+{
+    display: flex;
+}
+
+.exp tr td
+{
+    border: 1px solid black;
+    height: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exp tr td span
+{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(49, 48, 48);
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*weightmain------------------------------------------------------------------------------------------------------------------------------------*/
+.conmain2
+{
+    display: none;
+    /*visibility: hidden;
+    display: flex;
+    flex-direction: row;*/
+}
+
+.scorediv2
+{
+    width: 60%;
+    height: 350px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.consel2
+{
+    margin-left: 50px;
+    width: 300px;
+    height: 115px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid darkgray;
+}
+
+.scorebox2
+{
+    width: 45%;
+    height: 245px;
+    border: 1px solid black;
+    background-color: royalblue;
+}
+
+.scorebox2 tr
+{
+    display: flex;
+}
+
+.scorebox2 tr td span
+{
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+.abr2
+{
+    display: none;
+}
+
+.exp2
+{
+    background-color: limegreen;
+    width: 45%;
+    height: 246px;
+    border: 1px solid black;
+    border-left: 0px;
+}
+
+.exp2 tr
+{
+    display: flex;
+}
+
+.exp2 tr td
+{
+    border: 1px solid black;
+    height: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exp2 tr td span
+{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(49, 48, 48);
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*pressuremain------------------------------------------------------------------------------------------------------------------------------------*/
+.conmain3
+{
+    display: none;
+}
+
+.scorediv3
+{
+    width: 60%;
+    height: 350px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.consel3
+{
+    margin-left: 50px;
+    width: 300px;
+    height: 70px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid darkgray;
+}
+
+.scorebox3
+{
+    width: 45%;
+    height: 150px;
+    border: 1px solid black;
+    background-color: royalblue;
+}
+
+.scorebox3 tr
+{
+    display: flex;
+}
+
+.scorebox3 tr td span
+{
+    margin: auto;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+.abr3
+{
+    display: none;
+}
+
+.exp3
+{
+    background-color: limegreen;
+    width: 45%;
+    height: 150px;
+    border: 1px solid black;
+    border-left: 0px;
+}
+
+.exp3 tr
+{
+    display: flex;
+}
+
+.exp3 tr td
+{
+    border: 1px solid black;
+    height: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exp3 tr td span
+{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(49, 48, 48);
+}
+/*media------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 100px) and (max-width: 159px)
+{
+    .inlinetables
+    {
+        flex-direction: column;
+    }
+    .naslov
+    {
+        height: 25px;
+        font-size: 8px;
+    }
+    .units
+    {
+        height: 20px;
+    }
+    .unit1
+    {
+        height: 20px;
+        font-size: 7px;
+    }
+    .unit2
+    {
+        height: 20px;
+        font-size: 7px;
+    }
+    .unit3
+    {
+        height: 20px;
+        font-size: 7px;
+    }
+    .condiv
+    {
+        width: 100%;
+        order: 1;
+        height: 70px;
+    }
+    .divbut
+    {
+        margin-top: 0px;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        order: 2;
+        height: 24px;
+    }
+    .header
+    {
+        height: 25px;
+        justify-content: center;
+    }
+    .header span
+    {
+        margin-left: 5px;
+        font-size: 8px;
+    }
+    .conlabel
+    {
+        margin: 5px;
+        width: 90%;
+        font-size: 7px;
+    }
+    .coninput
+    {
+        margin: 5px;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+        height: 15px;
+        font-size: 8px;
+    }
+    .consel
+    {
+        margin-right: 20%;
+        margin-left: 20%;
+        width: 60%;
+        height: 15px;
+        font-size: 8px;
+    }
+    .consel2
+    {
+        margin-right: 20%;
+        margin-left: 20%;
+        width: 60%;
+        height: 15px;
+        font-size: 8px;
+        overflow: scroll;
+    }
+    .consel3
+    {
+        margin-right: 20%;
+        margin-left: 20%;
+        width: 60%;
+        height: 15px;
+        font-size: 8px;
+    }
+    .button1
+    {
+        height: 12px;
+        transform: none;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .button2
+    {
+        height: 12px;
+        transform: none;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .divbut p
+    {
+        text-align: center;
+        font-size: 10px;
+    }
+    .scorediv
+    {
+        margin-top: 0px;
+        order: 3;
+        width: 100%;
+        height: 210px;
+    }
+    .scorediv2
+    {
+        margin-top: 0px;
+        width: 100%;
+        order: 3;
+        height: 255px;
+    }
+    .scorediv3
+    {
+        margin-top: 0px;
+        order: 3;
+        width: 100%;
+        height: 165px;
+    }
+    .scorenaslov
+    {
+        font-size: 10px;
+        margin-bottom: -5px;
+        margin-left: 35px;
+        justify-content: center;
+    }
+    .scorebox
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 60px;
+        width: 90%;
+    }
+    .scorebox2
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 75px;
+        width: 90%;
+    }
+    .scorebox3
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 45px;
+        width: 90%;
+    }
+    .scorebox tr td .longnick
+    {
+        display: none;
+    }
+    .scorebox tr td .abr
+    {
+        display: flex;
+    }
+    .scorebox2 tr td .longnick2
+    {
+        display: none;
+    }
+    .scorebox2 tr td .abr2
+    {
+        display: flex;
+    }
+    .scorebox3 tr td .longnick3
+    {
+        display: none;
+    }
+    .scorebox3 tr td .abr3
+    {
+        display: flex;
+    }
+    .valuetd
+    {
+        width: 25%;
+        height: 15px;
+        font-size: 8px;
+    }
+    .outputtd
+    {
+        width: 75%;
+        height: 15px;
+    }
+    .exp
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 120px;
+    }
+    .exp2
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 150px;
+    }
+    .exp3
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 90px;
+    }
+    .exp tr td
+    {
+        height: 30px;
+    }
+    .exp tr td span
+    {
+        font-size: 8px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    .exp2 tr td
+    {
+        height: 30px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 8px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    .exp2 tr td .scase
+    {
+        font-size: 6px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    .exp3 tr td
+    {
+        height: 30px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 8px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
+
+@media only screen and (min-width: 160px) and (max-width: 219px)
+{
+    .inlinetables
+    {
+        flex-direction: column;
+    }
+    .naslov
+    {
+        height: 30px;
+        font-size: 10.5px;
+    }
+    .units
+    {
+        height: 25px;
+    }
+    .unit1
+    {
+        height: 25px;
+        font-size: 10px;
+    }
+    .unit2
+    {
+        height: 25px;
+        font-size: 10px;
+    }
+    .unit3
+    {
+        height: 25px;
+        font-size: 10px;
+    }
+    .condiv
+    {
+        width: 100%;
+        order: 1;
+        height: 110px;
+    }
+    .divbut
+    {
+        margin-top: 0px;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        order: 2;
+        height: 34px;
+    }
+    .header
+    {
+        height: 30px;
+        justify-content: center;
+    }
+    .header span
+    {
+        margin-left: 0px;
+        font-size: 10.5px;
+    }
+    .conlabel
+    {
+        margin: 5px;
+        width: 90%;
+        font-size: 9px;
+    }
+    .coninput
+    {
+        margin: 10px;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+        height: 20px;
+        font-size: 10px;
+    }
+    .consel
+    {
+        margin-right: 20%;
+        margin-left: 20%;
+        width: 60%;
+        height: 20px;
+        font-size: 10px;
+    }
+    .consel2
+    {
+        margin-right: 20%;
+        margin-left: 20%;
+        width: 60%;
+        height: 20px;
+        font-size: 10px;
+        overflow: scroll;
+    }
+    .consel3
+    {
+        margin-right: 20%;
+        margin-left: 20%;
+        width: 60%;
+        height: 20px;
+        font-size: 10px;
+    }
+    .button1
+    {
+        height: 17px;
+        transform: none;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .button2
+    {
+        height: 17px;
+        transform: none;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .divbut p
+    {
+        text-align: center;
+        font-size: 13px;
+    }
+    .scorediv
+    {
+        margin-top: 0px;
+        order: 3;
+        width: 100%;
+        height: 240px;
+    }
+    .scorediv2
+    {
+        margin-top: 0px;
+        width: 100%;
+        order: 3;
+        height: 290px;
+    }
+    .scorediv3
+    {
+        margin-top: 0px;
+        order: 3;
+        width: 100%;
+        height: 190px;
+    }
+    .scorenaslov
+    {
+        font-size: 13px;
+        margin-bottom: -5px;
+        margin-left: 35px;
+        justify-content: center;
+    }
+    .scorebox
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 80px;
+        width: 90%;
+    }
+    .scorebox2
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 100px;
+        width: 90%;
+    }
+    .scorebox3
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 60px;
+        width: 90%;
+    }
+    .scorebox tr td .longnick
+    {
+        display: none;
+    }
+    .scorebox tr td .abr
+    {
+        display: flex;
+    }
+    .scorebox2 tr td .longnick2
+    {
+        display: none;
+    }
+    .scorebox2 tr td .abr2
+    {
+        display: flex;
+    }
+    .scorebox3 tr td .longnick3
+    {
+        display: none;
+    }
+    .scorebox3 tr td .abr3
+    {
+        display: flex;
+    }
+    .valuetd
+    {
+        width: 25%;
+        height: 20px;
+        font-size: 10px;
+    }
+    .outputtd
+    {
+        width: 75%;
+        height: 20px;
+    }
+    .exp
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 120px;
+    }
+    .exp2
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 150px;
+    }
+    .exp3
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 90px;
+    }
+    .exp tr td
+    {
+        height: 30px;
+    }
+    .exp tr td span
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp2 tr td
+    {
+        height: 30px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp2 tr td .scase
+    {
+        font-size: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp3 tr td
+    {
+        height: 30px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (min-width: 220px) and (max-width: 249px)
+{
+    .inlinetables
+    {
+        flex-direction: column;
+    }
+    .naslov
+    {
+        height: 35px;
+        font-size: 14.5px;
+    }
+    .units
+    {
+        height: 30px;
+    }
+    .unit1
+    {
+        height: 30px;
+        font-size: 14px;
+    }
+    .unit2
+    {
+        height: 30px;
+        font-size: 14px;
+    }
+    .unit3
+    {
+        height: 30px;
+        font-size: 14px;
+    }
+    .condiv
+    {
+        width: 100%;
+        order: 1;
+        height: 150px;
+    }
+    .divbut
+    {
+        margin-top: 0px;
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        order: 2;
+        height: 50px;
+    }
+    .header
+    {
+        height: 35px;
+        justify-content: center;
+    }
+    .header span
+    {
+        margin-left: 0px;
+        font-size: 14.5px;
+    }
+    .conlabel
+    {
+        margin: 10px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 13px;
+    }
+    .coninput
+    {
+        margin: 15px;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+        height: 25px;
+        font-size: 14px;
+    }
+    .consel
+    {
+        margin-right: 20%;
+        margin-left: 20%;
+        width: 60%;
+        height: 25px;
+        font-size: 13px;
+    }
+    .consel2
+    {
+        margin-right: 20%;
+        margin-left: 20%;
+        width: 60%;
+        height: 25px;
+        font-size: 13px;
+        overflow: scroll;
+    }
+    .consel3
+    {
+        margin-right: 20%;
+        margin-left: 20%;
+        width: 60%;
+        height: 25px;
+        font-size: 13px;
+    }
+    .button1
+    {
+        transform: none;
+        border-radius: 25px 25px 0px 0px;
+    }
+    .button2
+    {
+        transform: none;
+        border-radius: 0px 0px 25px 25px;
+    }
+    .divbut p
+    {
+        text-align: center;
+    }
+    .scorediv
+    {
+        margin-top: 0px;
+        order: 3;
+        width: 100%;
+        height: 270px;
+    }
+    .scorediv2
+    {
+        margin-top: 0px;
+        width: 100%;
+        order: 3;
+        height: 330px;
+    }
+    .scorediv3
+    {
+        margin-top: 0px;
+        order: 3;
+        width: 100%;
+        height: 220px;
+    }
+    .scorenaslov
+    {
+        font-size: 15px;
+        justify-content: center;
+    }
+    .scorebox
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 100px;
+        width: 90%;
+    }
+    .scorebox2
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 125px;
+        width: 90%;
+    }
+    .scorebox3
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 75px;
+        width: 90%;
+    }
+    .scorebox tr td .longnick
+    {
+        display: none;
+    }
+    .scorebox tr td .abr
+    {
+        display: flex;
+    }
+    .scorebox2 tr td .longnick2
+    {
+        display: none;
+    }
+    .scorebox2 tr td .abr2
+    {
+        display: flex;
+    }
+    .scorebox3 tr td .longnick3
+    {
+        display: none;
+    }
+    .scorebox3 tr td .abr3
+    {
+        display: flex;
+    }
+    .valuetd
+    {
+        width: 25%;
+        height: 25px;
+        font-size: 12px;
+    }
+    .outputtd
+    {
+        width: 75%;
+        height: 25px;
+    }
+    .exp
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 120px;
+    }
+    .exp2
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 150px;
+    }
+    .exp3
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 90px;
+    }
+    .exp tr td
+    {
+        height: 30px;
+    }
+    .exp tr td span
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp2 tr td
+    {
+        height: 30px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp2 tr td .scase
+    {
+        font-size: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp3 tr td
+    {
+        height: 30px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 299px)
+{
+    .inlinetables
+    {
+        flex-direction: column;
+    }
+    .naslov
+    {
+        height: 40px;
+        font-size: 16px;
+    }
+    .units
+    {
+        height: 35px;
+    }
+    .unit1
+    {
+        height: 35px;
+        font-size: 15px;
+    }
+    .unit2
+    {
+        height: 35px;
+        font-size: 15px;
+    }
+    .unit3
+    {
+        height: 35px;
+        font-size: 15px;
+    }
+    .condiv
+    {
+        width: 100%;
+        order: 1;
+        height: 160px;
+    }
+    .divbut
+    {
+        margin-top: 0px;
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        height: 50px;
+        order: 2;
+    }
+    .header
+    {
+        height: 40px;
+        justify-content: center;
+    }
+    .header span
+    {
+        margin-left: 0px;
+        font-size: 16px;
+    }
+    .conlabel
+    {
+        margin: 10px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 14px;
+    }
+    .coninput
+    {
+        margin: 15px;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+        height: 25px;
+        font-size: 16px;
+    }
+    .consel
+    {
+        margin-right: 20%;
+        margin-left: 20%;
+        width: 60%;
+        height: 25px;
+        font-size: 14px;
+    }
+    .consel2
+    {
+        margin-right: 20%;
+        margin-left: 20%;
+        width: 60%;
+        height: 25px;
+        font-size: 14px;
+        overflow: scroll;
+    }
+    .consel3
+    {
+        margin-right: 20%;
+        margin-left: 20%;
+        width: 60%;
+        height: 25px;
+        font-size: 14px;
+    }
+    .button1
+    {
+        transform: none;
+        border-radius: 25px 25px 0px 0px;
+    }
+    .button2
+    {
+        transform: none;
+        border-radius: 0px 0px 25px 25px;
+    }
+    .divbut p
+    {
+        text-align: center;
+    }
+    .scorediv
+    {
+        margin-top: 0px;
+        order: 3;
+        width: 100%;
+        height: 285px;
+    }
+    .scorediv2
+    {
+        margin-top: 0px;
+        width: 100%;
+        order: 3;
+        height: 340px;
+    }
+    .scorediv3
+    {
+        margin-top: 0px;
+        order: 3;
+        width: 100%;
+        height: 230px;
+    }
+    .scorenaslov
+    {
+        font-size: 16px;
+        justify-content: center;
+    }
+    .scorebox
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 100px;
+        width: 90%;
+    }
+    .scorebox2
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 125px;
+        width: 90%;
+    }
+    .scorebox3
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 75px;
+        width: 90%;
+    }
+    .scorebox tr td .longnick
+    {
+        display: none;
+    }
+    .scorebox tr td .abr
+    {
+        display: flex;
+    }
+    .scorebox2 tr td .longnick2
+    {
+        display: none;
+    }
+    .scorebox2 tr td .abr2
+    {
+        display: flex;
+    }
+    .scorebox3 tr td .longnick3
+    {
+        display: none;
+    }
+    .scorebox3 tr td .abr3
+    {
+        display: flex;
+    }
+    .valuetd
+    {
+        width: 25%;
+        height: 25px;
+        font-size: 12px;
+    }
+    .outputtd
+    {
+        width: 75%;
+        height: 25px;
+    }
+    .exp
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 120px;
+    }
+    .exp2
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 150px;
+    }
+    .exp3
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 90px;
+    }
+    .exp tr td
+    {
+        height: 30px;
+    }
+    .exp tr td span
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp2 tr td
+    {
+        height: 30px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp2 tr td .scase
+    {
+        font-size: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp3 tr td
+    {
+        height: 30px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 399px)
+{
+    .inlinetables
+    {
+        flex-direction: column;
+    }
+    .naslov
+    {
+        height: 45px;
+        font-size: 20px;
+    }
+    .units
+    {
+        height: 40px;
+    }
+    .unit1
+    {
+        height: 40px;
+        font-size: 20px;
+    }
+    .unit2
+    {
+        height: 40px;
+        font-size: 20px;
+    }
+    .unit3
+    {
+        height: 40px;
+        font-size: 20px;
+    }
+    .condiv
+    {
+        width: 100%;
+        height: 200px;
+        order: 1;
+    }
+    .divbut
+    {
+        margin-top: 0px;
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        height: 50px;
+        order: 2;
+    }
+    .header
+    {
+        height: 50px;
+        justify-content: center;
+    }
+    .header span
+    {
+        margin-left: 0px;
+        font-size: 20px;
+    }
+    .conlabel
+    {
+        margin: 20px;
+        width: 90%;
+        font-size: 16px;
+    }
+    .coninput
+    {
+        margin: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+        height: 30px;
+        font-size: 18px;
+    }
+    .consel
+    {
+        margin-right: 20%;
+        margin-left: 20%;
+        width: 60%;
+        height: 30px;
+        font-size: 17px;
+    }
+    .consel2
+    {
+        margin-right: 20%;
+        margin-left: 20%;
+        width: 60%;
+        height: 30px;
+        font-size: 17px;
+        overflow: scroll;
+    }
+    .consel3
+    {
+        margin-right: 20%;
+        margin-left: 20%;
+        width: 60%;
+        height: 30px;
+        font-size: 17px;
+    }
+    .button1
+    {
+        transform: none;
+        border-radius: 25px 25px 0px 0px;
+    }
+    .button2
+    {
+        transform: none;
+        border-radius: 0px 0px 25px 25px;
+    }
+    .divbut p
+    {
+        text-align: center;
+    }
+    .scorediv
+    {
+        margin-top: 0px;
+        order: 3;
+        width: 100%;
+    }
+    .scorediv2
+    {
+        margin-top: 0px;
+        width: 100%;
+        order: 3;
+        height: 480px;
+    }
+    .scorediv3
+    {
+        margin-top: 0px;
+        order: 3;
+        width: 100%;
+        height: 310px;
+    }
+    .scorenaslov
+    {
+        font-size: 20px;
+        justify-content: center;
+    }
+    .scorebox
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 150px;
+        width: 90%;
+    }
+    .scorebox2
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 180px;
+        width: 90%;
+    }
+    .scorebox3
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 110px;
+        width: 90%;
+    }
+    .scorebox tr td .longnick
+    {
+        display: none;
+    }
+    .scorebox tr td .abr
+    {
+        display: flex;
+    }
+    .scorebox2 tr td .longnick2
+    {
+        display: none;
+    }
+    .scorebox2 tr td .abr2
+    {
+        display: flex;
+    }
+    .scorebox3 tr td .longnick3
+    {
+        display: none;
+    }
+    .scorebox3 tr td .abr3
+    {
+        display: flex;
+    }
+    .valuetd
+    {
+        width: 25%;
+        height: 35px;
+    }
+    .outputtd
+    {
+        width: 75%;
+        height: 35px;
+    }
+    .exp
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 150px;
+    }
+    .exp2
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 150px;
+    }
+    .exp3
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 110px;
+    }
+    .exp tr td
+    {
+        height: 35px;
+    }
+    .exp tr td span
+    {
+        font-size: 12px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 12px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp2 tr td .scase
+    {
+        font-size: 12px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 12px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 499px)
+{
+    .inlinetables
+    {
+        flex-direction: column;
+    }
+    .naslov
+    {
+        height: 45px;
+        font-size: 20px;
+    }
+    .units
+    {
+        height: 40px;
+    }
+    .unit1
+    {
+        height: 40px;
+        font-size: 20px;
+    }
+    .unit2
+    {
+        height: 40px;
+        font-size: 20px;
+    }
+    .unit3
+    {
+        height: 40px;
+        font-size: 20px;
+    }
+    .condiv
+    {
+        width: 32%;
+    }
+    .divbut
+    {
+        width: 18%;
+        margin-top: -45px;
+    }
+    .header
+    {
+        height: 50px;
+        justify-content: center;
+    }
+    .header span
+    {
+        margin-left: 0px;
+        font-size: 20px;
+    }
+    .conlabel
+    {
+        margin: 30px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        width: 180px;
+        font-size: 15px;
+    }
+    .coninput
+    {
+        margin: 20px;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 110px;
+        height: 25px;
+        font-size: 18px;
+    }
+    .consel
+    {
+        margin-left: 10px;
+        width: 180px;
+        height: 87px;
+        font-size: 17px;
+    }
+    .consel2
+    {
+        margin-left: 10px;
+        width: 180px;
+        height: 110px;
+        font-size: 17px;
+        overflow: scroll;
+    }
+    .consel3
+    {
+        margin-left: 10px;
+        width: 180px;
+        height: 70px;
+        font-size: 17px;
+    }
+    .button1
+    {
+        transform: none;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .button2
+    {
+        transform: none;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .divbut p
+    {
+        text-align: center;
+    }
+    .scorediv
+    {
+        width: 50%;
+    }
+    .scorediv2
+    {
+        width: 50%;
+        height: 480px;
+    }
+    .scorediv3
+    {
+        width: 50%;
+    }
+    .scorenaslov
+    {
+        margin-left: 55px;
+        font-size: 18px;
+    }
+    .scorebox
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 150px;
+        width: 90%;
+    }
+    .scorebox2
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 180px;
+        width: 90%;
+    }
+    .scorebox3
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        height: 110px;
+        width: 90%;
+    }
+    .scorebox tr td .longnick
+    {
+        display: none;
+    }
+    .scorebox tr td .abr
+    {
+        display: flex;
+    }
+    .scorebox2 tr td .longnick2
+    {
+        display: none;
+    }
+    .scorebox2 tr td .abr2
+    {
+        display: flex;
+    }
+    .scorebox3 tr td .longnick3
+    {
+        display: none;
+    }
+    .scorebox3 tr td .abr3
+    {
+        display: flex;
+    }
+    .valuetd
+    {
+        width: 25%;
+        height: 35px;
+    }
+    .outputtd
+    {
+        width: 75%;
+        height: 35px;
+    }
+    .exp
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 150px;
+    }
+    .exp2
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 150px;
+    }
+    .exp3
+    {
+        margin-left: 5%;
+        margin-right: 5px;
+        width: 90%;
+        height: 110px;
+    }
+    .exp tr td
+    {
+        height: 35px;
+    }
+    .exp tr td span
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp2 tr td .scase
+    {
+        font-size: 9px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 599px)
+{
+    .naslov
+    {
+        height: 60px;
+        font-size: 25px;
+    }
+    .units
+    {
+        height: 50px;
+    }
+    .unit1
+    {
+        height: 50px;
+    }
+    .unit2
+    {
+        height: 50px;
+    }
+    .unit3
+    {
+        height: 50px;
+    }
+    .condiv
+    {
+        width: 26%;
+    }
+    .divbut
+    {
+        width: 14%;
+    }
+    .header
+    {
+        height: 70px;
+        justify-content: center;
+    }
+    .header span
+    {
+        margin-left: 0px;
+        font-size: 30px;
+    }
+    .conlabel
+    {
+        margin: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 180px;
+        font-size: 15px;
+    }
+    .coninput
+    {
+        margin: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 35px;
+        width: 100px;
+        height: 25px;
+        font-size: 18px;
+    }
+    .consel
+    {
+        margin-left: 20px;
+        width: 180px;
+        height: 87px;
+        font-size: 17px;
+    }
+    .consel2
+    {
+        margin-left: 20px;
+        width: 180px;
+        height: 115px;
+        font-size: 17px;
+        overflow: scroll;
+    }
+    .consel3
+    {
+        margin-left: 20px;
+        width: 180px;
+        height: 70px;
+        font-size: 17px;
+    }
+    .button1
+    {
+        transform: none;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .button2
+    {
+        transform: none;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .divbut
+    {
+        margin-top: -55px;
+    }
+    .divbut p
+    {
+        text-align: center;
+    }
+    .scorediv
+    {
+        margin-top: -35px;
+    }
+    .scorediv2
+    {
+        margin-top: -30px;
+    }
+    .scorediv3
+    {
+        margin-top: -55px;
+    }
+    .scorenaslov
+    {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    .scorebox
+    {
+        width: 50%;
+    }
+    .scorebox2
+    {
+        width: 50%;
+    }
+    .scorebox3
+    {
+        width: 50%;
+    }
+    .scorebox tr td .longnick
+    {
+        display: none;
+    }
+    .scorebox tr td .abr
+    {
+        display: flex;
+    }
+    .scorebox2 tr td .longnick2
+    {
+        display: none;
+    }
+    .scorebox2 tr td .abr2
+    {
+        display: flex;
+    }
+    .scorebox3 tr td .longnick3
+    {
+        display: none;
+    }
+    .scorebox3 tr td .abr3
+    {
+        display: flex;
+    }
+    .valuetd
+    {
+        width: 30%;
+    }
+    .outputtd
+    {
+        width: 70%;
+    }
+    .exp
+    {
+        width: 40%;
+    }
+    .exp2
+    {
+        width: 40%;
+    }
+    .exp3
+    {
+        width: 40%;
+    }
+    .exp tr td span
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp2 tr td .scase
+    {
+        font-size: 9px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 699px)
+{
+    .condiv
+    {
+        width: 28%;
+    }
+    .divbut
+    {
+        width: 12%;
+    }
+    .header
+    {
+        height: 70px;
+        justify-content: center;
+    }
+    .header span
+    {
+        margin-left: 0px;
+        font-size: 30px;
+    }
+    .conlabel
+    {
+        margin: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 180px;
+        font-size: 15px;
+    }
+    .coninput
+    {
+        margin: 20px;
+        margin-left: 20px;
+        margin-top: 25px;
+        margin-bottom: 35px;
+        width: 140px;
+        height: 25px;
+        font-size: 18px;
+    }
+    .consel
+    {
+        margin-left: 20px;
+        width: 180px;
+        height: 87px;
+        font-size: 17px;
+    }
+    .consel2
+    {
+        margin-left: 20px;
+        width: 180px;
+        height: 115px;
+        font-size: 17px;
+        overflow: scroll;
+    }
+    .consel3
+    {
+        margin-left: 20px;
+        width: 180px;
+        height: 70px;
+        font-size: 17px;
+    }
+    .divbut
+    {
+        margin-top: -40px;
+    }
+    .button1
+    {
+        transform: none;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .button2
+    {
+        transform: none;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .divbut
+    {
+        margin-top: -50px;
+    }
+    .divbut p
+    {
+        text-align: center;
+    }
+    .scorediv
+    {
+        margin-top: -35px;
+    }
+    .scorediv2
+    {
+        margin-top: -30px;
+    }
+    .scorediv3
+    {
+        margin-top: -50px;
+    }
+    .scorenaslov
+    {
+        margin-left: -30px;
+    }
+    .scorebox tr td .longnick
+    {
+        display: none;
+    }
+    .scorebox tr td .abr
+    {
+        display: flex;
+    }
+    .scorebox2 tr td .longnick2
+    {
+        display: none;
+    }
+    .scorebox2 tr td .abr2
+    {
+        display: flex;
+    }
+    .scorebox3 tr td .longnick3
+    {
+        display: none;
+    }
+    .scorebox3 tr td .abr3
+    {
+        display: flex;
+    }
+    .valuetd
+    {
+        width: 25%;
+    }
+    .outputtd
+    {
+        width: 75%;
+    }
+    .exp tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td .scase
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 769px)
+{
+    .header
+    {
+        height: 70px;
+        justify-content: center;
+    }
+    .header span
+    {
+        margin-left: 0px;
+        font-size: 40px;
+    }
+    .conlabel
+    {
+        margin: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 180px;
+        font-size: 16px;
+    }
+    .coninput
+    {
+        margin: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 180px;
+        height: 25px;
+        font-size: 18px;
+    }
+    .consel
+    {
+        margin-left: 20px;
+        width: 180px;
+        height: 87px;
+        font-size: 17px;
+    }
+    .consel2
+    {
+        margin-left: 20px;
+        width: 180px;
+        height: 110px;
+        font-size: 17px;
+    }
+    .consel3
+    {
+        margin-left: 20px;
+        width: 180px;
+        height: 70px;
+        font-size: 17px;
+    }
+    .divbut
+    {
+        margin-top: -40px;
+    }
+    .button1
+    {
+        transform: none;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .button2
+    {
+        transform: none;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .divbut
+    {
+        margin-top: -50px;
+    }
+    .divbut p
+    {
+        text-align: center;
+    }
+    .scorediv
+    {
+        margin-top: -35px;
+    }
+    .scorediv2
+    {
+        margin-top: -30px;
+    }
+    .scorediv3
+    {
+        margin-top: -60px;
+    }
+    .scorenaslov
+    {
+        margin-left: -20px;
+    }
+    .scorebox tr td .longnick
+    {
+        display: none;
+    }
+    .scorebox tr td .abr
+    {
+        display: flex;
+    }
+    .scorebox2 tr td .longnick2
+    {
+        display: none;
+    }
+    .scorebox2 tr td .abr2
+    {
+        display: flex;
+    }
+    .scorebox3 tr td .longnick3
+    {
+        display: none;
+    }
+    .scorebox3 tr td .abr3
+    {
+        display: flex;
+    }
+    .valuetd
+    {
+        width: 25%;
+    }
+    .outputtd
+    {
+        width: 75%;
+    }
+    .exp tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td .scase
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 849px)
+{
+    .conlabel
+    {
+        margin: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 200px;
+        font-size: 17px;
+    }
+    .coninput
+    {
+        margin: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 200px;
+        height: 30px;
+        font-size: 18px;
+    }
+    .consel
+    {
+        margin-left: 20px;
+        width: 200px;
+        height: 90px;
+        font-size: 18px;
+    }
+    .consel2
+    {
+        margin-left: 20px;
+        width: 200px;
+        height: 115px;
+        font-size: 18px;
+    }
+    .consel3
+    {
+        margin-left: 20px;
+        width: 200px;
+        height: 70px;
+        font-size: 18px;
+    }
+    .divbut
+    {
+        margin-top: -40px;
+    }
+    .button1
+    {
+        transform: none;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .button2
+    {
+        transform: none;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .divbut p
+    {
+        text-align: center;
+    }
+    .scorediv
+    {
+        margin-top: -35px;
+    }
+    .scorediv2
+    {
+        margin-top: -30px;
+    }
+    .scorediv3
+    {
+        margin-top: -40px;
+    }
+    .scorebox tr td .longnick
+    {
+        display: none;
+    }
+    .scorebox tr td .abr
+    {
+        display: flex;
+    }
+    .scorebox2 tr td .longnick2
+    {
+        display: none;
+    }
+    .scorebox2 tr td .abr2
+    {
+        display: flex;
+    }
+    .scorebox3 tr td .longnick3
+    {
+        display: none;
+    }
+    .scorebox3 tr td .abr3
+    {
+        display: flex;
+    }
+    .valuetd
+    {
+        width: 25%;
+    }
+    .outputtd
+    {
+        width: 75%;
+    }
+    .exp tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td .scase
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 899px)
+{
+    .conlabel
+    {
+        margin: 20px;
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 200px;
+        font-size: 17px;
+    }
+    .coninput
+    {
+        margin: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 200px;
+        font-size: 18px;
+    }
+    .consel
+    {
+        margin-left: 20px;
+        width: 200px;
+        font-size: 18px;
+    }
+    .consel2
+    {
+        margin-left: 20px;
+        width: 200px;
+        font-size: 18px;
+    }
+    .consel3
+    {
+        margin-left: 20px;
+        width: 200px;
+        font-size: 18px;
+    }
+    .divbut
+    {
+        margin-top: -20px;
+    }
+    .scorediv
+    {
+        margin-top: -20px;
+    }
+    .scorediv2
+    {
+        margin-top: -20px;
+    }
+    .scorediv3
+    {
+        margin-top: -30px;
+    }
+    .scorebox tr td .longnick
+    {
+        display: none;
+    }
+    .scorebox tr td .abr
+    {
+        display: flex;
+    }
+    .scorebox2 tr td .longnick2
+    {
+        display: none;
+    }
+    .scorebox2 tr td .abr2
+    {
+        display: flex;
+    }
+    .scorebox3 tr td .longnick3
+    {
+        display: none;
+    }
+    .scorebox3 tr td .abr3
+    {
+        display: flex;
+    }
+    .valuetd
+    {
+        width: 25%;
+    }
+    .outputtd
+    {
+        width: 75%;
+    }
+    .exp tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td .scase
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 949px)
+{
+    .condiv
+    {
+        width: 35%;
+    }
+    .divbut
+    {
+        margin-top: -30px;
+    }
+    .scorediv
+    {
+        width: 55%;
+        margin-top: -20px;
+    }
+    .scorediv2
+    {
+        width: 55%;
+        margin-top: -20px;
+    }
+    .scorediv3
+    {
+        width: 55%;
+        margin-top: -30px;
+    }
+    .conlabel
+    {
+        margin: 20px;
+        margin-top: 50px;
+        width: 270px;
+        font-size: 17px;
+    }
+    .coninput
+    {
+        margin: 20px;
+        margin-bottom: 30px;
+        width: 270px;
+        font-size: 18px;
+    }
+    .consel
+    {
+        margin-left: 20px;
+        width: 270px;
+        font-size: 18px;
+    }
+    .consel2
+    {
+        margin-left: 20px;
+        width: 270px;
+        font-size: 18px;
+    }
+    .consel3
+    {
+        margin-left: 20px;
+        width: 270px;
+        font-size: 18px;
+    }
+    .scorebox tr td .longnick
+    {
+        display: none;
+    }
+    .scorebox tr td .abr
+    {
+        display: flex;
+    }
+    .scorebox2 tr td .longnick2
+    {
+        display: none;
+    }
+    .scorebox2 tr td .abr2
+    {
+        display: flex;
+    }
+    .scorebox3 tr td .longnick3
+    {
+        display: none;
+    }
+    .scorebox3 tr td .abr3
+    {
+        display: flex;
+    }
+    .valuetd
+    {
+        width: 25%;
+    }
+    .outputtd
+    {
+        width: 75%;
+    }
+    .exp tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td .scase
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 999px)
+{
+    .condiv
+    {
+        width: 35%;
+    }
+    .divbut
+    {
+        margin-top: -20px;
+    }
+    .scorediv
+    {
+        width: 55%;
+        margin-top: -10px;
+    }
+    .scorediv2
+    {
+        width: 55%;
+        margin-top: -10px;
+    }
+    .scorediv3
+    {
+        width: 55%;
+        margin-top: -25px;
+    }
+    .conlabel
+    {
+        margin: 30px;
+        margin-top: 50px;
+        width: 280px;
+        font-size: 17px;
+    }
+    .coninput
+    {
+        margin: 30px;
+        margin-bottom: 30px;
+        width: 280px;
+        font-size: 18px;
+    }
+    .consel
+    {
+        margin-left: 30px;
+        width: 280px;
+        font-size: 18px;
+    }
+    .consel2
+    {
+        margin-left: 30px;
+        width: 280px;
+        font-size: 18px;
+    }
+    .consel3
+    {
+        margin-left: 30px;
+        width: 280px;
+        font-size: 18px;
+    }
+    .scorebox tr td .longnick
+    {
+        display: none;
+    }
+    .scorebox tr td .abr
+    {
+        display: flex;
+    }
+    .scorebox2 tr td .longnick2
+    {
+        display: none;
+    }
+    .scorebox2 tr td .abr2
+    {
+        display: flex;
+    }
+    .scorebox3 tr td .longnick3
+    {
+        display: none;
+    }
+    .scorebox3 tr td .abr3
+    {
+        display: flex;
+    }
+    .valuetd
+    {
+        width: 25%;
+    }
+    .outputtd
+    {
+        width: 75%;
+    }
+    .exp tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td .scase
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1099px)
+{
+    .condiv
+    {
+        width: 35%;
+    }
+    .divbut
+    {
+        margin-top: -20px;
+    }
+    .scorediv
+    {
+        width: 55%;
+        margin-top: -10px;
+    }
+    .scorediv2
+    {
+        width: 55%;
+        margin-top: -10px;
+    }
+    .scorediv3
+    {
+        width: 55%;
+        margin-top: -25px;
+    }
+    .conlabel
+    {
+        margin: 40px;
+        margin-bottom: -15px;
+        margin-top: 50px;
+        width: 290px;
+        font-size: 18px;
+    }
+    .coninput
+    {
+        margin: 40px;
+        margin-bottom: 30px;
+        width: 290px;
+        font-size: 18px;
+    }
+    .consel
+    {
+        margin-left: 40px;
+        width: 290px;
+        font-size: 18px;
+    }
+    .consel2
+    {
+        margin-left: 40px;
+        width: 290px;
+        font-size: 18px;
+    }
+    .consel3
+    {
+        margin-left: 40px;
+        width: 290px;
+        font-size: 18px;
+    }
+    .scorebox tr td .longnick
+    {
+        display: none;
+    }
+    .scorebox tr td .abr
+    {
+        display: flex;
+    }
+    .scorebox2 tr td .longnick2
+    {
+        display: none;
+    }
+    .scorebox2 tr td .abr2
+    {
+        display: flex;
+    }
+    .scorebox3 tr td .longnick3
+    {
+        display: none;
+    }
+    .scorebox3 tr td .abr3
+    {
+        display: flex;
+    }
+    .valuetd
+    {
+        width: 25%;
+    }
+    .outputtd
+    {
+        width: 75%;
+    }
+    .exp tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td .scase
+    {
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1199px)
+{
+    .condiv
+    {
+        width: 35%;
+    }
+    .divbut
+    {
+        margin-top: -20px;
+    }
+    .scorediv
+    {
+        margin-top: -10px;
+        width: 55%;
+    }
+    .scorediv2
+    {
+        margin-top: -10px;
+        width: 55%;
+    }
+    .scorediv3
+    {
+        margin-top: -25px;
+        width: 55%;
+    }
+    .conlabel
+    {
+        width: 300px;
+        font-size: 19px;
+    }
+    .exp tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td span:last-of-type
+    {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1249px)
+{
+    .condiv
+    {
+        width: 32%;
+    }
+    .divbut
+    {
+        margin-top: -20px;
+    }
+    .scorediv
+    {
+        margin-top: -10px;
+        width: 58%;
+    }
+    .scorediv2
+    {
+        margin-top: -10px;
+        width: 58%;
+    }
+    .scorediv3
+    {
+        margin-top: -25px;
+        width: 58%;
+    }
+    .conlabel
+    {
+        width: 300px;
+        font-size: 19px;
+    }
+    .exp tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td span
+    {
+        font-size: 13px;
+    }
+    .exp2 tr td span:last-of-type
+    {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .exp3 tr td span
+    {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 1250px)
+{
+    .scorediv3
+    {
+        margin-top: -25px;
+    }
+}

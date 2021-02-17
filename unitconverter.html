@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="unitconvertercss.css">
+</head>
+<body onload="myFunction()">
+    <div class="header">
+        <span>Welcome to the <span>Unit Converter</span></span>
+    </div>
+    <div class="main">
+        <div class="naslov">
+            <span>Units to Convert</span>
+        </div>       
+    
+        <div class="units">
+            <div class="unit1" id="unit1"><span>Length</span></div>
+            <div class="unit2" id="unit2"><span>Weight</span></div>
+            <div class="unit3" id="unit3"><span>Pressure</span></div>
+        </div>
+        <!--lengthmain--------------------------------------------------------------------------->
+        <div class="conmain" id="lengthmain">
+            <div class="condiv">
+                <form id="lenform">
+                        <label class="conlabel" for="lenunit">
+                            Choose a unit to convert from and then type
+                            a value to convert in the textbox:
+                        </label>                    
+                    <input class="coninput" type="number" name="lenunit" id="lenunit" min="0" maxlength="0" max="999999999999">     
+                </form>
+                <select class="consel" form="lenform" size="4" id="resunit">
+                    <option value="km"><span>Kilometer (km)</span></option>
+                    <option value="m"><span>Meter (m)</span></option>
+                    <option value="cm"><span>Centimeter (cm)</span></option>
+                    <option value="mm"><span>Milimeter (mm)</span></option>
+                </select>
+            </div>
+            <div class="divbut">
+                <button id="col1" onmouseover="mocol()" onmouseout="moutcol()" class="button1"></button><!--onclick="pasteInp()"-->
+                <p id="col3" onmouseover="mocol()">Convert</p><!--onclick="pasteInp()"-->
+                <button id="col2" onmouseover="mocol()" onmouseout="moutcol()" class="button2"></button><!--onclick="pasteInp()"-->
+            </div>
+            <div class="scorediv">
+                <span class="scorenaslov">
+                    <p>Results</p>
+                </span>
+                <div class="inlinetables">
+                    <table class="scorebox">
+                        <tr>
+                            <td class="valuetd"><span class="longnick">Kilometers:</span><span class="abr">km:</span></td>
+                            <td class="outputtd"><span id="reskm"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="valuetd"><span class="longnick">Meters:</span><span class="abr">m:</span></td>
+                            <td class="outputtd"><span id="resm"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="valuetd"><span class="longnick">Centimeters:</span><span class="abr">cm:</span></td>
+                            <td class="outputtd"><span id="rescm"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="valuetd"><span class="longnick">Milimeters:</span><span class="abr">mm:</span></td>
+                            <td class="outputtd"><span id="resmm"></span></td>
+                        </tr>
+                    </table>
+                    <table class="exp">
+                        <tr>
+                            <td><span>1 km = 1000 m = 100000 cm = 1000000 mm</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>1 m = 0.001 km = 100 cm = 1000 mm</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>1 cm = 0.00001 km = 0.01 m = 10 mm</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>1 mm = 0.000001 km = 0.001 m = 0.1 cm</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--weightmain--------------------------------------------------------------------------->
+        <div class="conmain2" id="weightmain">
+            <div class="condiv">
+                <form id="lenform">
+                        <label class="conlabel" for="lenunit2">
+                            Choose a unit to convert from and then type
+                            a value to convert in the textbox:
+                        </label>                    
+                    <input class="coninput" type="number" name="lenunit2" id="lenunit2" min="0" maxlength="0" max="999999999999">     
+                </form>
+                <select class="consel2" form="lenform" size="5" id="resunit2">
+                    <option value="kg"><span>Kilogram (kg)</span></option>
+                    <option value="g"><span>Gram (g)</span></option>
+                    <option value="mg"><span>Miligram (mg)</span></option>
+                    <option value="T"><span>Metric Ton (T)</span></option>
+                    <option value="ma"><span>Atomic mass unit (ma)</span></option>
+                </select>
+            </div>
+            <div class="divbut">
+                <button id="col4" onmouseover="mocol2()" onmouseout="moutcol2()" class="button1"></button>
+                <p id="col5" onmouseover="mocol2()">Convert</p>
+                <button id="col6" onmouseover="mocol2()" onmouseout="moutcol2()" class="button2"></button>
+            </div>
+            <div class="scorediv2">
+                <span class="scorenaslov">
+                    <p>Results</p>
+                </span>
+                <div class="inlinetables">
+                    <table class="scorebox2">
+                        <tr>
+                            <td class="valuetd"><span class="longnick2">Kilograms:</span><span class="abr2">kg:</span></td>
+                            <td class="outputtd"><span id="reskg"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="valuetd"><span class="longnick2">Grams:</span><span class="abr2">g:</span></td>
+                            <td class="outputtd"><span id="resg"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="valuetd"><span class="longnick2">Miligrams:</span><span class="abr2">mg:</span></td>
+                            <td class="outputtd"><span id="resmg"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="valuetd"><span class="longnick2">Metric tons:</span><span class="abr2">T :</span></td>
+                            <td class="outputtd"><span id="resT"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="valuetd"><span class="longnick2">Atomic mass <br> units:</span><span class="abr2">ma:</span></td>
+                            <td class="outputtd"><span id="resma"></span></td>
+                        </tr>
+                    </table>
+                    <table class="exp2">
+                        <tr>
+                            <td><span>1 kg = 1000 m = 100000 cm = 1000000 mm</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>1 g = 0.001 km = 100 cm = 1000 mm</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>1 mg = 0.00001 km = 0.01 m = 10 mm</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>1 T = 0.000001 km = 0.001 m = 0.1 cm</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="scase">1 ma = 1.6726219 × 10<sup>−27</sup>  kg = 1.6726219 × 10<sup>−24</sup> g = 1.6726219 × 10<sup>−21</sup> mg</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--pressuremain--------------------------------------------------------------------------->
+        <div class="conmain3" id="pressuremain">
+            <div class="condiv">
+                <form id="lenform">
+                        <label class="conlabel" for="lenunit3">
+                            Choose a unit to convert from and then type
+                            a value to convert in the textbox:
+                        </label>                    
+                    <input class="coninput" type="number" name="lenunit3" id="lenunit3" min="0" maxlength="0" max="999999999999">     
+                </form>
+                <select class="consel3" form="lenform" size="3" id="resunit3">
+                    <option value="pa"><span>Pascal (Pa)</span></option>
+                    <option value="kpa"><span>Kilopascal (kPa)</span></option>
+                    <option value="b"><span>Bar (b)</span></option>
+                </select>
+            </div>
+            <div class="divbut">
+                <button id="col7" onmouseover="mocol3()" onmouseout="moutcol3()" class="button1"></button>
+                <p id="col8" onmouseover="mocol3()">Convert</p>
+                <button id="col9" onmouseover="mocol3()" onmouseout="moutcol3()" class="button2"></button>
+            </div>
+            <div class="scorediv3">
+                <span class="scorenaslov">
+                    <p>Results</p>
+                </span>
+                <div class="inlinetables">
+                    <table class="scorebox3">
+                        <tr>
+                            <td class="valuetd"><span class="longnick3">Pascals:</span><span class="abr3">Pa:</span></td>
+                            <td class="outputtd"><span id="respa"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="valuetd"><span class="longnick3">Kilopascals:</span><span class="abr3">kPa:</span></td>
+                            <td class="outputtd"><span id="reskpa"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="valuetd" class="longnick3"><span>Bars:</span><span class="abr3">bar:</span></td>
+                            <td class="outputtd"><span id="resbar"></span></td>
+                        </tr>
+                    </table>
+                    <table class="exp3">
+                        <tr>
+                            <td><span>1 Pa = 0.001 kPa = 1 × 10<sup>-5</sup> bar</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>1 kPa = 1000 Pa = 0.01 bar</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>1 bar = 100000 Pa = 100 kPa</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--end------------------------------------------------------------------------------------------------------------------------------------>
+    </div>
+    <script src="unitconverterjs.js"></script> 
+</body>
+</html>
